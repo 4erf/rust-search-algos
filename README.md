@@ -50,6 +50,7 @@ let visited = search_algo.get_visited();
 
 ### Examples
 [Labyrinth optimal path](examples/labyrinth)
+
 [Ship loading strategy](examples/ship_loader)
 
 ### Dependencies
