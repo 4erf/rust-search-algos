@@ -1,0 +1,1 @@
+./target/release/ship_loader "$@"
