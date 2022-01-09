@@ -12,7 +12,7 @@ You can fork this repo and implement your own using the provided data structures
 ### Usage
 Add this to your Cargo.toml `[dependencies]` section:
 ```toml
-regex = { git = "https://github.com/4erf/rust-search-algos" }
+search = { git = "https://github.com/4erf/rust-search-algos" }
 ```
 
 In your app implement the `Node` trait and create root node, ex:
