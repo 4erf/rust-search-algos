@@ -1,3 +1,4 @@
+#!/bin/bash
 ./ASTARStowage.sh ./ASTAR-tests mapa1 contenedores1 heuristica1
 ./ASTARStowage.sh ./ASTAR-tests mapa1 contenedores2 heuristica1
 ./ASTARStowage.sh ./ASTAR-tests mapa1 contenedores1 heuristica2
