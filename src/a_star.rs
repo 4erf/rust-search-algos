@@ -27,15 +27,12 @@ impl<T: Node> Algorithm<T> for AStar<T> {
         self.visited.insert(root.get_state(), root.get_cost());
         self.p_queue.push(PTuple { priority: AStar::cost_fn(&root), node: root });
 
-        while let Some(PTuple {priority: _, node: parent}) = self.p_queue.pop() {
-            if parent.is_solution() { return Some(parent) }
-            for descendant in parent.get_descendants() {
+        while let Some(PTuple {priority: _, node}) = self.p_queue.pop() {
+            if node.is_solution() { return Some(node) }
+            for descendant in node.get_descendants() {
                 let visited_cost = *self.visited.get(&descendant.get_state()).unwrap_or(&isize::MAX);
                 if visited_cost <= AStar::cost_fn(&descendant) { continue; }
                 self.visited.insert(descendant.get_state().clone(), descendant.get_cost());
-                // if AStar::cost_fn(&descendant) > 418 {
-                //     println!("{}", AStar::cost_fn(&descendant));
-                // }
                 self.p_queue.push(PTuple { priority: AStar::cost_fn(&descendant), node: descendant });
             }
         }

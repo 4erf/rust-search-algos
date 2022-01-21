@@ -18,9 +18,9 @@ impl<T: Node> Algorithm<T> for BFS<T> {
     fn find_solution(&mut self, root: Box<T>) -> Option<Box<T>> {
         self.visited.insert(root.get_state());
         self.queue.push_front(root);
-        while let Some(parent) = self.queue.pop_back() {
-            if parent.is_solution() { return Some(parent) }
-            for descendant in parent.get_descendants() {
+        while let Some(node) = self.queue.pop_back() {
+            if node.is_solution() { return Some(node) }
+            for descendant in node.get_descendants() {
                 if self.visited.contains(&descendant.get_state()) { continue; }
                 self.visited.insert(descendant.get_state().clone());
                 self.queue.push_front(descendant);
