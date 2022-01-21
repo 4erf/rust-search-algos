@@ -12,4 +12,3 @@ dependencies = [
 [[package]]
 name = "search"
 version = "0.1.0"
-source = "git+https://github.com/4erf/rust-search-algos#0b7b7bd5e4f61d3fb2b9186a4ddedfa4ce2ce752"
