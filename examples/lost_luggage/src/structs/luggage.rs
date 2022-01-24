@@ -1,8 +1,9 @@
+use serde::{Deserialize};
 use super::flight::Flight;
 
+#[derive(Deserialize)]
 pub struct Luggage {
-    id: String,
-    origin: String,
-    destination: String,
-    plan: Vec<Flight>,
+    pub id: String,
+    pub origin: String,
+    pub destination: String,
 }

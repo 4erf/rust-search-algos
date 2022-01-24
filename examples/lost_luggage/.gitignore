@@ -1,1 +1,3 @@
 target/
+configs/
+!configs/test.json

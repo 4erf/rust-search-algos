@@ -1,0 +1,149 @@
+[
+  {
+    "id": "LIS",
+    "flights": [
+      {
+        "id": "AEA194",
+        "origin": "LIS",
+        "destination": "CBP",
+        "departure": 0,
+        "duration": 30
+      }
+    ],
+    "luggage": [
+      {
+        "id": "LIS-1",
+        "origin": "LIS",
+        "destination": "CBP"
+      }
+    ]
+  },
+  {
+    "id": "CBP",
+    "flights": [
+      {
+        "id": "NJE914F",
+        "origin": "CBP",
+        "destination": "LIS",
+        "departure": 15,
+        "duration": 25
+      },
+      {
+        "id": "JTD501",
+        "origin": "CBP",
+        "destination": "LIS",
+        "departure": 25,
+        "duration": 30
+      }
+    ],
+    "luggage": []
+  },
+  {
+    "id": "OPO",
+    "flights": [
+      {
+        "id": "FR4506",
+        "origin": "OPO",
+        "destination": "LIS",
+        "departure": 50,
+        "duration": 60
+      },
+      {
+        "id": "TP1063",
+        "origin": "OPO",
+        "destination": "CBP",
+        "departure": 0,
+        "duration": 25
+      }
+    ],
+    "luggage": [
+      {
+        "id": "OPO-1",
+        "origin": "OPO",
+        "destination": "LIS"
+      },
+      {
+        "id": "OPO-2",
+        "origin": "OPO",
+        "destination": "LIS"
+      },
+      {
+        "id": "OPO-3",
+        "origin": "OPO",
+        "destination": "LIS"
+      }
+    ]
+  },
+  {
+    "id": "MAD",
+    "flights": [
+      {
+        "id": "AF442",
+        "origin": "MAD",
+        "destination": "ORY",
+        "departure": 100,
+        "duration": 240
+      },
+      {
+        "id": "AF442",
+        "origin": "MAD",
+        "destination": "OPO",
+        "departure": 10,
+        "duration": 160
+      }
+    ],
+    "luggage": [
+      {
+        "id": "MAD-1",
+        "origin": "MAD",
+        "destination": "LIS"
+      },
+      {
+        "id": "MAD-2",
+        "origin": "MAD",
+        "destination": "LIS"
+      },
+      {
+        "id": "MAD-3",
+        "origin": "MAD",
+        "destination": "LIS"
+      }
+    ]
+  },
+  {
+    "id": "ORY",
+    "flights": [
+      {
+        "id": "AF442",
+        "origin": "ORY",
+        "destination": "MAD",
+        "departure": 400,
+        "duration": 240
+      },
+      {
+        "id": "AF442",
+        "origin": "ORY",
+        "destination": "LIS",
+        "departure": 500,
+        "duration": 300
+      }
+    ],
+    "luggage": [
+      {
+        "id": "ORY-1",
+        "origin": "ORY",
+        "destination": "LIS"
+      },
+      {
+        "id": "ORY-2",
+        "origin": "ORY",
+        "destination": "LIS"
+      },
+      {
+        "id": "ORY-3",
+        "origin": "ORY",
+        "destination": "LIS"
+      }
+    ]
+  }
+]
