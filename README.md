@@ -53,6 +53,8 @@ let visited = search_algo.get_visited();
 
 [Ship loading strategy](examples/ship_loader)
 
+[Lost luggage recovery](examples/lost_luggage)
+
 ### Dependencies
 None
 
