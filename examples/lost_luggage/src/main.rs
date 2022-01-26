@@ -20,6 +20,7 @@ use search::bfs::BFS;
 use search::dfs::DFS;
 use search::dijkstra::Dijkstra;
 use search::a_star::AStar;
+use search::dfbnb::DFBnB;
 
 fn process_luggage(
     luggage: &Luggage,
@@ -59,7 +60,7 @@ fn process_luggage(
                 flights_map.get(flight).unwrap().origin,
                 flights_map.get(flight).unwrap().destination,
                 flights_map.get(flight).unwrap().departure,
-                flight,
+                flight.split('-').collect::<Vec<&str>>()[0],
                 flights_map.get(flight).unwrap().duration,
             );
         }
@@ -85,6 +86,8 @@ fn main() {
         .flatten()
         .collect();
 
+    // Don't use with depth-first algos yet, huge RAM usage because of recursion.
+    // TODO: Improve recursion on depth-first algos, maybe tail recursion if possible.
     rayon::scope(|s| {
         for location in locations.iter() {
             for luggage in location.luggage.iter() {
@@ -92,6 +95,4 @@ fn main() {
             }
         }
     })
-
-
 }

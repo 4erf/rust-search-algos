@@ -6,6 +6,7 @@ Couple of search algorithms implemented in the rust language.
 - DFS
 - Dijkstra
 - A*
+- DFBnB
 
 You can fork this repo and implement your own using the provided data structures and interfaces.
 

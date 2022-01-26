@@ -10,6 +10,7 @@ use search::bfs::BFS;
 use search::dfs::DFS;
 use search::dijkstra::Dijkstra;
 use search::a_star::AStar;
+use search::dfbnb::DFBnB;
 
 #[derive(Copy, Clone)]
 enum Action { North, South, West, East }
@@ -219,6 +220,9 @@ fn main() {
 
     let mut algo: AStar<PacmanNode> = AStar::new();
     let solution = algo.find_solution(Box::new(node)).expect("No solution found");
+
+    // let mut algo: DFBnB<PacmanNode> = DFBnB::new();
+    // let solution = algo.find_solution(Box::new(node)).expect("No solution found");
 
     let mut result = Labyrinth::new(path).expect("Cannot load labyrinth");
 

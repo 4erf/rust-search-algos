@@ -1,5 +1,4 @@
 use serde::{Deserialize};
-use super::flight::Flight;
 
 #[derive(Deserialize)]
 pub struct Luggage {
